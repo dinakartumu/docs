@@ -1,107 +1,29 @@
 ---
-title: 'Development'
-description: 'Preview changes locally to update your docs'
+title: "Development"
+description: "Preview changes locally to update your docs"
 ---
 
-<Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding. <br />
-  Please upgrade to ```docs.json``` before proceeding and delete the legacy ```mint.json``` file.
-</Info>
+The Pageloop dashboard is your central hub for creating, managing, and updating your knowledge base articles. This guide provides an overview of the main sections in the left-hand navigation menu to help you find your way around the platform.
 
-Follow these steps to install and run Mintlify on your operating system:
+### **The Home Page**
 
-**Step 1**: Install Mintlify:
+When you first log in, you land on the **Home** page. It provides a personalized overview of your work, greeting you by name and summarizing key metrics to give you a quick snapshot of your content status.
 
-<CodeGroup>
+- **Drafts:** Shows the number of articles you have in progress.
+- **Updates:** Shows the number of articles that need your review for potential updates.
 
-  ```bash npm
-  npm i -g mintlify
-  ```
+### **The Articles Page**
 
-```bash yarn
-yarn global add mintlify
-```
+The **Articles** page displays a complete list of all the articles in your knowledge base that are managed by Pageloop. From this central view, you can see the status, creator, and creation date for each article.
 
-</CodeGroup>
+### **The Drafts Page**
 
-**Step 2**: Navigate to the docs directory (where the `docs.json` file is located) and execute the following command:
+Selecting **Drafts** from the navigation menu takes you to a filtered view of all your articles that are currently in draft status. From here, you can easily find and continue working on your unfinished articles.
 
-```bash
-mintlify dev
-```
+### **The Updates Page**
 
-A local preview of your documentation will be available at `http://localhost:3000`.
+The **Updates** page is where you can review and manage changes that Pageloop has detected for your existing articles. This page helps you keep your documentation current by flagging content that may be outdated. The table shows details like who triggered the update scan, when changes were detected, and the number of pending changes for each article.
 
-### Custom Ports
+For a detailed explanation of terms used throughout the platform, see our [**<u>Pageloop Concepts & Glossary</u>**](https://pageloop-help.zendesk.com/hc/en-us/articles/36764859604753-Pageloop-Concepts-Glossary).
 
-By default, Mintlify uses port 3000. You can customize the port Mintlify runs on by using the `--port` flag. To run Mintlify on port 3333, for instance, use this command:
-
-```bash
-mintlify dev --port 3333
-```
-
-If you attempt to run Mintlify on a port that's already in use, it will use the next available port:
-
-```md
-Port 3000 is already in use. Trying 3001 instead.
-```
-
-## Mintlify Versions
-
-Please note that each CLI release is associated with a specific version of Mintlify. If your local website doesn't align with the production version, please update the CLI:
-
-<CodeGroup>
-
-```bash npm
-npm i -g mintlify@latest
-```
-
-```bash yarn
-yarn global upgrade mintlify
-```
-
-</CodeGroup>
-
-## Validating Links
-
-The CLI can assist with validating reference links made in your documentation. To identify any broken links, use the following command:
-
-```bash
-mintlify broken-links
-```
-
-## Deployment
-
-<Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
-</Tip>
-
-If the deployment is successful, you should see the following:
-
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
-
-## Code Formatting
-
-We suggest using extensions on your IDE to recognize and format MDX. If you're a VSCode user, consider the [MDX VSCode extension](https://marketplace.visualstudio.com/items?itemName=unifiedjs.vscode-mdx) for syntax highlighting, and [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting.
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title='Error: Could not load the "sharp" module using the darwin-arm64 runtime'>
-
-    This may be due to an outdated version of node. Try the following:
-    1. Remove the currently-installed version of mintlify: `npm remove -g mintlify`
-    2. Upgrade to Node v19 or higher.
-    3. Reinstall mintlify: `npm install -g mintlify`
-  </Accordion>
-
-  <Accordion title="Issue: Encountering an unknown error">
-  
-    Solution: Go to the root of your device and delete the \~/.mintlify folder. Afterwards, run `mintlify dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in the CLI version? [Check out the CLI changelog.](https://www.npmjs.com/package/mintlify?activeTab=versions)
+![CleanShot 2025-07-11 at 11.26.51@2x.png](/images/CleanShot2025-07-11at11.26.51@2x.png)
