@@ -12,7 +12,7 @@
     "tabs": [
       {
         "tab": "Guides",
-        "groups": [
+        "pages": [
           {
             "group": "Get Started",
             "pages": [
@@ -21,15 +21,14 @@
               "development"
             ]
           },
+          "essentials/navigation",
           {
             "group": "Essentials",
             "pages": [
               "essentials/markdown",
-              "essentials/code",
-              "essentials/hello",
-              "essentials/images",
               "essentials/settings",
-              "essentials/navigation",
+              "essentials/code",
+              "essentials/images",
               "essentials/reusable-snippets"
             ]
           }
