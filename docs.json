@@ -13,14 +13,23 @@
     {
       "group": "Getting Started",
       "pages": [
-        { "page": "index" },
-        { "page": "quickstart" }
+        {
+          "page": "index"
+        },
+        {
+          "page": "quickstart"
+        }
       ]
     },
     {
       "group": "Guides",
       "pages": [
-        { "page": "guides/writing-docs" }
+        {
+          "page": "guides/writing-docs"
+        },
+        {
+          "page": "components"
+        }
       ]
     }
   ]
