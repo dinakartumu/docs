@@ -17,8 +17,7 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           "essentials/navigation",
@@ -27,6 +26,7 @@
             "pages": [
               "essentials/markdown",
               "essentials/settings",
+              "development",
               "essentials/code",
               "essentials/images",
               "essentials/reusable-snippets"
@@ -46,8 +46,8 @@
           {
             "group": "Endpoint Examples",
             "pages": [
-              "api-reference/endpoint/get",
               "api-reference/endpoint/create",
+              "api-reference/endpoint/get",
               "api-reference/endpoint/delete"
             ]
           }
