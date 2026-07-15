@@ -76,6 +76,12 @@
             ]
           }
         ]
+      },
+      {
+        "version": "v2",
+        "pages": [
+          "essentials/hello"
+        ]
       }
     ]
   },
