@@ -9,51 +9,6 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "pages": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart"
-            ]
-          },
-          "essentials/navigation",
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/settings",
-              "development",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/delete"
-            ]
-          }
-        ]
-      }
-    ],
     "global": {
       "anchors": [
         {
@@ -72,7 +27,57 @@
           "icon": "newspaper"
         }
       ]
-    }
+    },
+    "versions": [
+      {
+        "version": "v1",
+        "tabs": [
+          {
+            "tab": "Guides",
+            "pages": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "introduction",
+                  "quickstart"
+                ]
+              },
+              "essentials/navigation",
+              {
+                "group": "Essentials",
+                "pages": [
+                  "essentials/markdown",
+                  "essentials/settings",
+                  "development",
+                  "essentials/code",
+                  "essentials/images",
+                  "essentials/reusable-snippets"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "API Reference",
+            "groups": [
+              {
+                "group": "API Documentation",
+                "pages": [
+                  "api-reference/introduction"
+                ]
+              },
+              {
+                "group": "Endpoint Examples",
+                "pages": [
+                  "api-reference/endpoint/create",
+                  "api-reference/endpoint/get",
+                  "api-reference/endpoint/delete"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
